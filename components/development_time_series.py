@@ -27,6 +27,10 @@ def render_development_time_series(df: pd.DataFrame):
         f"Development Time Series from {df['year'].min()} to {df['year'].max()} by "
         f"continent."
     )
+    st.caption(
+        "**Note: Time series charts are not filtered by year, so the data is displayed "
+        "for all years.**"
+    )
 
     st.info(
         "🔍 **Key Insight**: The development of life expectancy, GDP, and HDI has been "

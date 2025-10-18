@@ -29,15 +29,13 @@ def render_gdp_distribution_plot(df: pd.DataFrame, year: int):
     ]
 
     # Create info text with highest GDP countries
-    info_text = "🏆 **Highest GDP by Continent**: "
     continent_info = []
     for _, row in highest_gdp_by_continent.iterrows():
         continent_info.append(
-            f"{row['continent']}: {row['country']} (${row['gdp']:,.0f})"
+            f"- **{row['continent']}**: {row['country']} (${row['gdp']:,.0f})"
         )
 
-    info_text += "\n".join(continent_info)
-
+    info_text = "🏆 **Highest GDP by Continent**:\n\n" + "\n".join(continent_info)
     st.info(info_text)
 
     # Calculate percentage of country GDP within each continent
