@@ -159,3 +159,4 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 *This dashboard is designed to make global development data accessible and understandable, helping users explore the complex relationships between economic development, human well-being, and environmental factors across different regions and time periods.*
+# human-development-analysis
