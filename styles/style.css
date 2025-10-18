@@ -1,0 +1,371 @@
+/* Streamlit Theme Template - Professional Light Theme */
+
+/* === MAIN APP CONTAINER === */
+.stApp {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* === OVERRIDE STREAMLIT'S DEFAULT THEME === */
+.stApp {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Force all containers to be white */
+.main .block-container {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Force sidebar to be very light gray */
+.css-1d391kg {
+    background-color: #f5f5f5 !important;
+}
+
+/* Force all text to be black */
+* {
+    color: #000000 !important;
+}
+
+/* Override any dark theme elements */
+[data-testid="stAppViewContainer"] {
+    background-color: #ffffff !important;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #f5f5f5 !important;
+}
+
+/* Make the sidebar narrower */
+[data-testid="stSidebar"], [data-testid="stSidebar"] > div:first-child {
+    width: 200px !important;
+    min-width: 200px !important;
+    padding: 0rem !important;
+    margin: 0rem !important;
+}
+
+/* Remove all sidebar padding */
+[data-testid="stSidebar"] section[aria-label="main"] {
+    padding: 0rem 0rem !important;
+}
+
+/* Remove sidebar container padding */
+[data-testid="stSidebar"] {
+    padding: 0rem !important;
+}
+
+/* Remove sidebar button container padding */
+[data-testid="stSidebar"] .stButton {
+    padding: 0rem !important;
+    margin: 0rem !important;
+}
+
+/* Let the main content take up more room */
+[data-testid="stAppViewContainer"] > section:nth-child(1) {
+    flex: 1 1 0% !important;
+}
+
+/* Remove any unintended scrollbars or spacing */
+[data-testid="stAppViewBlockContainer"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+/* Main content area padding */
+div[data-testid="stAppViewBlockContainer"] {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* Main content area padding fallback */
+  div.block-container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* Trim inner column/container gaps further */
+  section.main > div,
+  div[data-testid="stVerticalBlock"] {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+/* Remove plotly chart borders and shadows */
+div[data-testid="stPlotlyChart"] {
+    box-shadow: none !important;
+    border: none !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+}
+
+/* Fallback for older builds */
+.stPlotlyChart, .stPlotlyChart > div {
+    box-shadow: none !important;
+    border: none !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+}
+
+/* Force buttons to have proper contrast */
+.stButton > button {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+/* Make sidebar buttons with smaller font */
+[data-testid="stSidebar"] .stButton > button {
+    padding: 0rem 0rem !important;
+    margin: 0rem 0 !important;
+    font-size: 0.4rem !important;
+    min-height: 2.2rem !important;
+    width: 100% !important;
+}
+
+/* Hide unwanted sidebar buttons */
+.sidebar .stButton > button:first-child,
+.sidebar .stButton > button:nth-child(2) {
+    display: none !important;
+}
+
+/* Sidebar buttons with lighter background */
+.sidebar .stButton > button {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+    border: 1px solid #e0e0e0 !important;
+    transition: all 0.2s ease !important;
+}
+
+.sidebar .stButton > button:hover {
+    background-color: #e9ecef !important;
+    border-color: #000000 !important;
+}
+
+/* Fix selectbox background */
+.stSelectbox > div > div {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Selectbox dropdown background */
+.stSelectbox [data-baseweb="select"] {
+    background-color: #ffffff !important;
+}
+
+.stSelectbox [data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Selectbox dropdown options */
+.stSelectbox [role="listbox"] {
+    background-color: #ffffff !important;
+}
+
+.stSelectbox [role="option"] {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Target the actual dropdown menu */
+div[data-baseweb="popover"] {
+    background-color: #ffffff !important;
+}
+
+div[data-baseweb="popover"] [role="listbox"] {
+    background-color: #ffffff !important;
+}
+
+div[data-baseweb="popover"] [role="option"] {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Alternative targeting */
+.stSelectbox div[data-baseweb="select"] div[data-baseweb="popover"] {
+    background-color: #ffffff !important;
+}
+
+.stSelectbox label {
+    color: #000000 !important;
+}
+
+/* Fix top header area */
+.main .block-container > div:first-child {
+    background-color: #ffffff !important;
+}
+
+/* Fix any dark rectangles */
+.stApp > div:first-child {
+    background-color: #ffffff !important;
+}
+
+/* Target Streamlit's header area */
+[data-testid="stHeader"] {
+    background-color: #ffffff !important;
+}
+
+/* Force all input elements to be white */
+.stSelectbox, .stTextInput, .stNumberInput {
+    background-color: #ffffff !important;
+}
+
+.stSelectbox > div > div > div {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* === MAIN CONTENT AREA === */
+.main .block-container {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 2rem 1rem !important;
+}
+
+/* === SIDEBAR === */
+.css-1d391kg,
+[data-testid="stSidebar"] {
+    background-color: #f5f5f5 !important;
+    border-right: 1px solid #e0e0e0 !important;
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3, h4, h5, h6, p, div, span, label {
+    color: #000000 !important;
+}
+
+/* === INPUT ELEMENTS === */
+.stSelectbox > div > div,
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #d0d0d0 !important;
+    border-radius: 4px !important;
+}
+
+.stSelectbox label,
+.stTextInput label,
+.stNumberInput label {
+    color: #000000 !important;
+    font-weight: 500 !important;
+}
+
+/* === BUTTONS === */
+.stButton > button {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #d0d0d0 !important;
+    border-radius: 4px !important;
+    transition: all 0.2s ease !important;
+}
+
+.stButton > button:hover {
+    background-color: #f0f0f0 !important;
+    border-color: #000000 !important;
+}
+
+/* === METRICS === */
+.stMetric {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+}
+
+/* === CHARTS === */
+[data-testid="stPlotlyChart"] {
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* === HEADER AREA === */
+[data-testid="stHeader"] {
+    background-color: #ffffff !important;
+}
+
+/* === FORMS === */
+.stForm {
+    background-color: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+    .main .block-container {
+        padding: 1rem 0.5rem !important;
+    }
+}
+
+/* === ACCESSIBILITY === */
+.stSelectbox > div > div:focus,
+.stTextInput > div > div > input:focus,
+.stButton > button:focus {
+    outline: 2px solid #007bff !important;
+    outline-offset: 2px !important;
+}
+
+/* === LINE CHART STYLING === */
+.stLineChart {
+    background-color: white !important;
+}
+.stLineChart .vega-embed {
+    background-color: white !important;
+}
+.stLineChart .vega-embed .vega-actions {
+    background-color: white !important;
+}
+
+/* Vega-Lite specific styling */
+.vega-embed {
+    background-color: white !important;
+}
+.vega-embed .vega-actions {
+    background-color: white !important;
+}
+.vega-embed .vega-actions a {
+    color: black !important;
+}
+
+/* Target the actual chart container */
+div[data-testid="stLineChart"] {
+    background-color: white !important;
+}
+div[data-testid="stLineChart"] .vega-embed {
+    background-color: white !important;
+}
+div[data-testid="stLineChart"] .vega-embed svg {
+    background-color: white !important;
+}
+
+/* === TARGETED ST.INFO STYLING FOR GDP DISTRIBUTION === */
+/* Only target st.info in the GDP distribution section */
+.stAlert {
+    font-family: "Source Sans Pro", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #000000 !important;
+}
+
+.stAlert * {
+    font-family: "Source Sans Pro", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #000000 !important;
+}
+
+.stAlert strong {
+    font-weight: 600 !important;
+    font-family: "Source Sans Pro", sans-serif !important;
+    font-size: 14px !important;
+    color: #000000 !important;
+}
