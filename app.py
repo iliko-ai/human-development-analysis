@@ -45,7 +45,7 @@ def main():
         render_statistical_analysis(df, year)
     elif nav_state == "Time Analysis":
         render_development_time_series(df)
-    elif nav_state == "Sunburst Plot":
+    elif nav_state == "GDP Distribution":
         render_gdp_distribution_plot(df, year)
     else:
         render_data_exploration(df, year)
