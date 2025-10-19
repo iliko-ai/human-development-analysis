@@ -70,11 +70,10 @@ def render_gdp_distribution_plot(df: pd.DataFrame, year: int):
         paper_bgcolor="white",
         font_color="black",
         title_font_color="black",
-        width=1400,  # Set specific width
-        height=800,  # Set specific height
+        width=1000,  # Set specific width
+        height=600,  # Set specific height
+        margin=dict(b=0),  # Remove all margins
+        autosize=False,
     )
 
-    # Create columns to center the plot at 80% width
-    col1, col2, col3 = st.columns([0.5, 14, 0.5])
-    with col2:
-        st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True)

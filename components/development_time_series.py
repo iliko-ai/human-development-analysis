@@ -71,6 +71,24 @@ def render_development_time_series(df: pd.DataFrame):
         ),
     )
 
+    # Add vertical line at year 2008
+    fig.add_vline(
+        x=2008,
+        line_dash="dash",
+        line_color="red",
+        annotation_text="2008: Financial Crisis. 2009: GDP slump, recovery starts with "
+        "stimulus",
+        annotation_position="top",
+    )
+
+    fig.add_vline(
+        x=2009,
+        line_dash="dash",
+        line_color="red",
+        annotation_text="",
+        annotation_position="top",
+    )
+
     st.plotly_chart(fig, use_container_width=True)
 
     hdi_melted_df = create_continent_time_series_df(df, "hdi_index")
@@ -135,7 +153,16 @@ def render_development_time_series(df: pd.DataFrame):
         x=2008,
         line_dash="dash",
         line_color="red",
-        annotation_text="2008 Financial Crisis",
+        annotation_text="2008–2009: CO₂ fell with the GDP slump, then rose as recovery "
+        "began.",
+        annotation_position="top",
+    )
+
+    fig.add_vline(
+        x=2009,
+        line_dash="dash",
+        line_color="red",
+        annotation_text="",
         annotation_position="top",
     )
     st.plotly_chart(fig, use_container_width=True)
